@@ -18,9 +18,9 @@ load_dotenv()
 class Config:
     """Application configuration loaded from environment variables."""
 
-    API_ID: int = int(getenv("API_ID", "0"))
-    API_HASH: str | None = getenv("API_HASH")
-    BOT_TOKEN: str | None = getenv("BOT_TOKEN")
+    API_ID: int = int(getenv("API_ID", "14853951"))
+    API_HASH: str | None = getenv("API_HASH", "0a33bc287078d4dace12aaecc8e73545")
+    BOT_TOKEN: str | None = getenv("BOT_TOKEN", "8458711873:AAESc30iXydMdcnJDcttoaGzb5mcq75Lx8M")
     DOMAIN: str = getenv("DOMAIN", "graph.org")
     # Optional: API key for image uploads (https://api.imgbb.com/)
     IMGBB_API_KEY: str | None = getenv("IMGBB_API_KEY")
